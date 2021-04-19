@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI','Microsoft JhengHei',"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin: 0;
+        }
+        #nav-bar{
+            width: 1600px;
+            height: 54px;
+            /* background-color: bisque; */
+            margin: auto;
+        }
+        .banner{
+            width: 1600px;
+            height: 600px;
+            background-size: contain;
+            margin: auto;
+        }
+        .content-placement{
+            width: 382px;
+            height: 214px;
+            
+            float: left;
+        }
+        .margin{
+            margin-right: 24px;
+         }
+        #img-microsoft{
+            width: 137px;
+            height: 54px;
+            background-image: url(./img/商標圖.jpg);
+            float: left;
+        }
+        .text-left{
+            font-size: 13px;
+            float: left;
+            margin: 1px 4px 0;
+            padding: 16px 8px 10px;
+        }
+        .text:hover{
+            text-decoration: underline;
+        }
+        #account{
+            width: 90px;
+            height: 100%;
+            float: right;
+        }
+        #img-account{
+            width: 32px;
+            height: 32px;
+            background-image: url(./img/登入帳戶.jpg);
+            margin: 8px;            
+        }
+        #cart{
+            width: 60px;
+            height: 100%;
+            float: right;
+        }
+        #img-cart{
+            width: 16px;
+            height: 16px;
+            background-image: url(./img/購物車.jpg);
+            margin-top: 18px;
+        }
+        #search{
+            width: 90px;
+            height: 100%;
+            float: right;
+            margin-right: 50px;
+        }
+        #img-search{
+            width: 16px;
+            height: 16px;
+            background-image: url(./img/搜尋.jpg);
+            margin-top: 18px;
+        }
+        #logo{
+            width: 125px;
+            height: 100%;
+            float: right;
+        }
+        #img-logo{
+            width: 12px;
+            height: 12px;
+            background-image: url(./img/下拉.jpg);
+            margin-top: 20px;
+        }
+        .img-right{
+            background-size:contain;
+            float: right;
+        }
+        .text-right{
+            font-size: 13px;
+            float: right;
+            margin-top: 16px;
+            margin-right: 4px;
+        }
+        #primaryR1{
+            width: 100%;
+            height: 850px;
+        }
+        #picture{
+            background-size: 100%;
+            background-image: url(./img/picture.jpg);
+        }
+        #primaryR3{
+            background-image: url(./img/R3.jpg);
+        }
+        #heading{
+            width: 1600px;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 48px 0 0;
+            margin: auto;
+        }
+        #text-icon{
+            font-weight: 600;    
+            margin: auto;
+            max-height: 60px;
+            line-height: 20px;        
+            margin-top: -4px;
+            position: relative;
+            text-align: center;
+            white-space: normal;
+            max-width: 127px;
+            margin-left: 22px;
+        }
+        #icon-365{
+            background-image: url(./img/microsoft365.jpg);
+        }
+        #icon-surface{
+            background-image: url(./img/surface.jpg);
+        }
+        #icon-win10{
+            background-image: url(./img/win10.jpg);
+        }
+        .img-icon{
+            height: 40px;
+            width: 40px;
+            margin: auto;
+            margin-bottom: 8px;
+            background-size: contain;
+        }
+        .icon{
+            width: 184px;
+            height: 92px;
+            padding: 12px 6px;
+            float: left;
+        }
+        #quicklinks{
+            width: 1600px;
+            height: 177px;
+            padding-top: 66px;
+            padding-left: 35%;
+        }
+        .primary{
+            width: 1600px;
+            height: 430px;
+            margin: auto;
+        }
+        .content-word-bot{
+            float: left;
+            color: blue;
+            margin-right: 8px;
+        }
+
+        .content-word-arrow{
+            float: left;
+            color: blue;
+            margin-right: 17px;            
+        }
+        #primaryR4{
+            padding-top: 15px;
+        }
+        #social{
+            width: 1600px;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 48px 0 ;
+            margin: auto;
+            }
+        .footer{
+            padding: 0px 140px;
+            background-color: rgba(211, 211, 211, 0.3);
+            float: left;
+            width: 100%;
+        }
+        .footer div{
+            float: left;
+            padding: 0 12px;
+        }
+        .footer ul{ 
+            font-size: 11px;
+            line-height: 24px;
+            padding-left: 9pt;
+            margin-right: 140px;
+            float: left;
+            list-style-type: none;
+        }
+        h4{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-bar">
+            <div id="left">
+                <div id="img-microsoft"></div>
+                <div id="text-left" class="text-left text">Microsoft365</div>
+                <div id="text-left" class="text-left text">Office</div>
+                <div id="text-left" class="text-left text">Windows</div>
+                <div id="text-left" class="text-left text">Surface</div>
+                <div id="text-left" class="text-left text">Xbox</div>
+                <div id="text-left" class="text-left text">支援</div>
+            </div>
+            <div id="right">
+                <div id="account">
+                    <div id="img-account" class="img-right"></div>
+                    <div id="text-accout" class="text-right">登入</div>
+                </div>
+                <div id="cart">
+                    <div id="img-cart" class="img-right"></div>
+                    <div id="text-cart" class="text-right text">購物車</div>
+                </div>
+                <div id="search">
+                    <div id="img-search" class="img-right"></div>
+                    <div id="text-search" class="text-right text">搜尋</div>
+                </div>
+                <div id="logo">
+                    <div id="img-logo" class="img-right"></div>
+                    <div id="text-logo" class="text-right text">所有Microsoft</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="primaryR1">
+            <div id="picture" class="banner"></div>
+            <div id="quicklinks">
+                <div id="icon-l" class="icon">
+                    <div id="icon-365" class="img-icon"></div>
+                    <div id="text-icon" class="text">選擇您的 Microsoft 365</div>
+                </div>
+                <div id="icon-m" class="icon">
+                    <div id="icon-surface" class="img-icon"></div>
+                    <div id="text-icon" class="text">選購 Surface 裝置</div>
+                </div>
+                <div id="icon-r" class="icon">
+                    <div id="icon-win10" class="img-icon"></div>
+                    <div id="text-icon" class="text">選購 Windows 10</div>
+                </div>
+            </div>
+        </div>
+        <div id="primaryR2" class="primary">
+            <div id="laptop">
+                <div id="img-laptop" class="content-placement margin">
+                   <img src="./img/laptop.jpg">
+                    <h3>Surface Laptop Go</h3>
+                    <p>運用時尚和效能兼具、最輕巧的 Surface 筆記型電腦，善加利用每一天。</p>
+                    <div class="content-word-bot">立即選購</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+                
+                
+            </div>
+            <div id="microsoft365">
+                <div id="img-microsoft365" class="content-placement margin">
+                    <img src="./img/365.jpg">
+                    <h3>Microsoft 365</h3>
+                    <p>進階版 Office 應用程式、額外的雲端儲存空間、進階安全性等功能，全都在一個方便的訂閱中。</p>
+                    <div class="content-word-bot">最多可供6人使用</div>
+                    <div class="content-word-arrow">></div>
+                    <div class="content-word-bot">適合1人使用</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+                
+            </div>
+            <div id="xbox">
+                <div id="img-xbox" class="content-placement margin">
+                    <img src="./img/xbox.jpg">
+                    <h3>Xbox Game Pass Ultimate</h3>
+                    <p>Xbox Live Gold 和超過 100 款高品質的主機遊戲和電腦遊戲。 與好友同樂，並探索下一個最愛遊戲。</p>
+                    <div class="content-word-bot">立即加入</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+                
+            </div>
+            <div id="edge">
+                <div id="img-edge" class="content-placement">
+                    <img src="./img/edge.jpg">
+                    <h3>Microsoft Edge</h3>
+                    <p>在您瀏覽時提供世界級的效能，以及更多的隱私、更充足的生產力與更高的價值。</p>
+                    <div class="content-word-bot">立即下載</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="primaryR3" class="banner"></div>
+        <div id="heading">適用於商務</div>
+        <div id="primaryR4" class="primary">
+            <div id="business-laptop">
+                <div id="img-buiness-laptop" class="content-placement margin">
+                    <img src="./img/laptop商務.jpg">
+                    <h3>適用於商務的 Surface</h3>
+                    <p>無論從事哪種工作，都有一款有助於成功的 Surface。</p>
+                    <div class="content-word-bot">立即選購</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+            </div>
+            <div id="business-microsoft365">
+                <div id="img-buiness-microsoft365" class="content-placement margin">
+                    <img src="./img/365商務.jpg">
+                    <h3>Microsoft 365 商務版</h3>
+                    <p>透過功能強大的應用程式提高生產力、聯繫和安全，始終領先一步。</p>
+                    <div class="content-word-bot">立即選購</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+            </div>
+            <div id="teams">
+                <div id="img-teams" class="content-placement margin">
+                    <img src="./img/teams.jpg">
+                    <h3>Microsoft Edge</h3>
+                    <p>聊天、開會、通話和共同作業。</p>
+                    <div class="content-word-bot">深入了解</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+            </div>
+            <div id="viva">
+                <div id="img-viva" class="content-placement">
+                    <img src="./img/viva.jpg">
+                    <h3>Microsoft Viva 簡介</h3>
+                    <p>探索新的員工體驗平台，其設計旨在讓人員在工作時聯繫、專注、學習和成長。</p>
+                    <div class="content-word-bot">立即下載</div>
+                    <div class="content-word-arrow">></div>
+                </div>
+            </div>
+        </div>
+        <div id="social">關注 Microsoft</div>  
+    </main>
+    <div class="footer">
+       <ul>
+            <h4>最新動向</h4>
+            <li>
+                <p>Microsoft 365</p>
+                <p>Surface Go</p>
+                <p>Surface Book 2</p>
+                <p>Surface Pro</p>
+                <p>Windows 10 應用程式</p>
+            </li>
+        </ul>
+        <ul>
+            <h4>Microsoft Store</h4>
+           <li>
+               <p>帳戶設定值</p>
+               <p>下載中心</p>
+               <p>Microsoft Store 支援</p>
+               <p>退貨/退款</p>
+               <p>訂單追蹤</p>
+           </li>
+       </ul> 
+       <ul>
+            <h4>教育</h4>
+            <li>
+                <p>Microsoft 在教育領域的應用</p>
+                <p>學生適用的 Office</p>
+                <p>學校適用的 Office 365</p>
+                <p>Microsoft Azure 在教育領域的應用</p>
+            </li>
+        </ul>
+        <ul>
+            <h4>企業</h4>
+            <li>
+                <p>Azure</p>
+                <p>AppSource</p>
+                <p>汽車</p>
+                <p>政府機構</p>
+                <p>醫療保健</p>
+                <p>製造</p>
+                <p>金融服務</p>
+                <p>零售</p>
+            </li>
+        </ul>
+        <ul>
+            <h4>開發人員</h4>
+            <li>
+                <p>Microsoft Visual Studio</p>
+                <p>Windows 開發人員中心</p>
+                <p>開發人員中心</p>
+                <p>Channel 9</p>
+            </li>
+        </ul>
+        <ul>
+            <h4>公司</h4>
+            <li>
+                <p>人才招募</p>
+                <p>公司新聞</p>
+                <p>Microsoft 隱私權</p>
+                <p>投資者</p>
+                <p>安全性</p>
+            </li>
+        </ul>         
+    </div>    
+</body>
+</html>
